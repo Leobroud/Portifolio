@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Ipad from '../assets/ipad.png'
+import Mac from '../assets/macbook.png'
+import Imac from '../assets/imac.png'
 
 const ContainerUm = styled.div`
   height: 73px;
@@ -7,14 +10,23 @@ const ContainerUm = styled.div`
   text-align: center;
   `
 const ContainerDois = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 358px;
   background-color: #011726;
 `
 const ContainerTres = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 358px;
   background-color: #1b818c;
 `
 const ContainerQuatro = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 358px;
   background-color: #025e73;
 `
@@ -43,20 +55,124 @@ const ContainerTextEnd = styled.button`
   background: none;
   border: none;
 `
+const ContainerMac = styled.img`
+  width: 312px;
+  height: 216px;
+  margin: 24px 65px 28px 0;
+  object-fit: contain;
+`
+const ContainerIpad = styled.img`
+  width: 311px;
+  height: 215px;
+  margin: 24px 52px 29px 0;
+  object-fit: contain;
+`
+const ContainerImac = styled.img`
+  width: 321px;
+  height: 222px;
+  margin: 46px 47px 0 0;
+  object-fit: contain;
+  `
+
+  const ContainerTitle = styled.div`
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -0.25px;
+  color: #ffffff;
+  `
+  const FrontOrBack = styled.div`
+  font-family: Montserrat;
+  font-size: 21px;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  `
+  const ContainerAbout = styled.div`
+  width: 368px;
+  height: 122px;
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: -0.16px;
+  color: #ffffff;
+  padding-top:30px;
+  `
+  const ContainerButton = styled.button`
+  margin: 16px 227px 0 5px;
+  padding: 5px 23px 7px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #82d0d9;
+  cursor: pointer;
+  `
+  const Container = styled.div`
+  display:grid;
+  `
+
 
 function TelaQuatro() {
   return (
-    <div>
+    <>
       <ContainerUm>
         <ContainerText> Meus projetos</ContainerText>
       </ContainerUm>
-      <ContainerDois></ContainerDois>
-      <ContainerTres></ContainerTres>
-      <ContainerQuatro></ContainerQuatro>
+      <ContainerDois>
+          <ContainerMac src={Mac}/>
+        <Container>
+          <ContainerTitle>4Used</ContainerTitle>
+          <FrontOrBack>Front-end</FrontOrBack>
+          <ContainerAbout>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </ContainerAbout>
+          <ContainerButton>Ver no GitHub</ContainerButton>
+        </Container>
+      </ContainerDois>
+      <ContainerTres>
+        <ContainerIpad src={Ipad}/>
+        <Container>
+          <ContainerTitle>Título</ContainerTitle>
+          <FrontOrBack>Front-end</FrontOrBack>
+          <ContainerAbout>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </ContainerAbout>
+          <ContainerButton>Ver no GitHub</ContainerButton>
+          </Container>
+      </ContainerTres>
+      <ContainerQuatro>
+        <ContainerImac src={Imac}/>
+        <Container>
+          <ContainerTitle>Título</ContainerTitle>
+          <FrontOrBack>Full-Stack</FrontOrBack>
+          <ContainerAbout>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, 
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </ContainerAbout>
+          <ContainerButton>Ver no GitHub</ContainerButton>
+        </Container>
+      </ContainerQuatro>
       <ContainerCinco>
         <ContainerTextEnd>mais projetos</ContainerTextEnd>
       </ContainerCinco>
-    </div>
+    </>
   );
 }
 
