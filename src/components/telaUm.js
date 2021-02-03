@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import leo from '../assets/leo.jpg'
 
 const Container = styled.div`
   display:grid;
@@ -15,8 +16,10 @@ const ContainerUm = styled.div`
 
 const ContainerDois = styled.div`
   height: 721px;
-  background-color: rgba(1, 23, 38, 0.47);
-  
+  background-image: url(${leo});
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
 `
 const ContainerName = styled.div`
   font-style: bold;
@@ -132,7 +135,18 @@ function TelaUm() {
         </ContainerButton>
       </ContainerUm>
       <ContainerDois>
-
+        <div>
+          <div>quem sou</div>
+          <div>projetos</div>
+          <div>Contato</div>
+        </div>
+        <div>
+          <div>linkedin</div>
+          <div>whatsapp</div>
+          <div>github</div>
+          <div>twitter</div>
+          <div>instagram</div>
+        </div>
       </ContainerDois>
     </Container>
     </>
