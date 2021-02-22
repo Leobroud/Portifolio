@@ -15,7 +15,7 @@ function App() {
       <TelaDois/>
       <TelaTres/>
       <TelaQuatro/>
-      <TelaCinco/>
+      {/* <TelaCinco/> */}
       <TelaSeis/>
     </>
   );

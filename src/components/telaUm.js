@@ -2,6 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import leo from '../assets/leo.jpg'
 
+import Curriculo from '../assets/curriculoTi.docx'
+import Link from '../assets/group-10.svg'
+import Zap from '../assets/group-3.svg'
+import Git from '../assets/fill-1.svg'
+import Twitter from '../assets/fill-1_2.svg'
+import Insta from '../assets/group-8.svg'
+
 const Container = styled.div`
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -19,7 +26,8 @@ const ContainerDois = styled.div`
   background-image: url(${leo});
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%);
+  background-color: rgba(1, 23, 38, 0.47);
+  filter: brightness(90%);
 `
 const ContainerName = styled.div`
   font-style: bold;
@@ -37,6 +45,7 @@ const ContainerButton = styled.button`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: #82d0d9;
   margin-left:135px;
+  cursor:pointer;
 `
 const ContainerMe = styled.div`
   font-style: bold;
@@ -93,6 +102,17 @@ const ContainerTextButton = styled.text`
   letter-spacing: -0.28px;
   color: #011726;
 `
+const ContainerLink = styled.div`
+  display:flex;
+  justify-content:space-evenly;
+  width: 30px;
+  height: 27px;
+  margin: 70px 15px 3px 600px;
+  cursor: pointer;
+`
+const LinkContainer = styled.a`
+  text-decoration: none;
+`
 
 function TelaUm() {
   return (
@@ -113,13 +133,13 @@ function TelaUm() {
           Apaixonado por tecnologia e programação.
         </ContainerTitle>
         <ContainerText>
-        Lorem ipsum dolor sit amet,consectetur adipiscing elit,<br/>
-        sed do eiusmod temporincididunt ut labore et dolore magna aliqua.<br/>
-        Utenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br/>
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit<br/>
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint<br/>
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br/>
-        ollit anim id est laborum.
+        Tenho 29 anos, formado em Análise e desenvolvimento de sistemas<br/> 
+        conheci a área de desenvolvimento web<br/>
+        graças a uma indicação de um bootcamp Full-Stack<br/> que fiz
+        pela Labenu, focado em React, JavaScript e NodeJS.<br/> 
+        Conclui e fui em busca de novos conhecimentos sobre a área.<br/>
+        Hoje estudo tecnologias voltada ao desenvolvimento Web,<br/>
+        na parte de Front-end.
         </ContainerText>
         <ContainerTec>
         <ContainerSpace/>NodeJS
@@ -129,23 +149,41 @@ function TelaUm() {
         <ContainerSpace/>JavaScript 
         </ContainerTec>
         <ContainerButton>
+        <LinkContainer href={Curriculo}
+          download = "Curriculo">
           <ContainerTextButton>
             CV em PDF
           </ContainerTextButton>
+        </LinkContainer>
         </ContainerButton>
       </ContainerUm>
       <ContainerDois>
         <div>
-          <div>quem sou</div>
-          <div>projetos</div>
-          <div>Contato</div>
-        </div>
-        <div>
-          <div>linkedin</div>
-          <div>whatsapp</div>
-          <div>github</div>
-          <div>twitter</div>
-          <div>instagram</div>
+          <ContainerLink>
+            <a href="https://www.linkedin.com/in/leonardo-oliveira-barbosa/">
+              <img src={Link}/>
+            </a>
+          </ContainerLink>
+          <ContainerLink>
+            <a href="https://api.whatsapp.com/send?phone=5521980629880">
+              <img src={Zap}/>
+            </a>
+          </ContainerLink>
+          <ContainerLink>
+            <a href="https://github.com/Leobroud">
+              <img src={Git}/>
+            </a>
+          </ContainerLink>
+          <ContainerLink>
+            <a href="https://twitter.com/Leonard76725026">
+              <img src={Twitter}/>
+            </a>
+          </ContainerLink>
+          <ContainerLink>
+            <a href="https://www.instagram.com/leonardo.o.barbosa/?hl=pt-br">
+              <img src={Insta}/>
+            </a>
+          </ContainerLink>
         </div>
       </ContainerDois>
     </Container>

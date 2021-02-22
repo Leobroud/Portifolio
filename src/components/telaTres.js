@@ -78,16 +78,15 @@ function TelaTres() {
 
         </ContainerEducation>
         <ContainerLabenu>
-          Curso de Web Full Stack na Labenu
+          Análise e Desenvolvimento de Sistemas - UNESA
         </ContainerLabenu>
         <ContainerText>
-          6 meses - 2020 <p/>
-          "A Labenu é uma startup que 
-          forma Desenvolvedores Web Full Stack 
-          prontos para o mercado de trabalho. 
-          São mais de 1000 horas de programação que faz 
-          com que seus alunos sejam profissionais 
-          completos tanto no Back-End quanto no Front End."
+          2 anos 5 meses - 2019 <p/>
+          "O curso de análise e desenvolvimento
+          ensina nossos alunos a projetar, documentar, especificar, testar,
+          implementar e cuidar da manutenção de sistemas computacionais e software.
+          A administração de banco de dados e a governança em TI se juntam ao planejamento 
+          e implantação de serviços relacionados à engenharia de software."
         </ContainerText>
         </ContainerEditor>
       </ContainerUm>
