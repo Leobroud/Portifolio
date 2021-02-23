@@ -44,13 +44,7 @@ const ContainerText = styled.div`
   padding-top: 20px;
 `
 const ContainerTextEnd = styled.button`
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: -0.2px;
-  color: #ffffff;
   padding-top: 23px;
-  outline:none;
   cursor: pointer;
   background: none;
   border: none;
@@ -91,7 +85,7 @@ const ContainerImac = styled.img`
   width: 368px;
   height: 122px;
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: -0.16px;
   color: #ffffff;
   padding-top:30px;
@@ -108,6 +102,18 @@ const ContainerImac = styled.img`
   display:grid;
   `
 
+  const ContainerLink = styled.a`
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  `
+  const ContainerLinkAll = styled.a`
+  text-decoration: none;
+  color: #000000;
+  `
 
 function TelaQuatro() {
   return (
@@ -121,22 +127,24 @@ function TelaQuatro() {
           <ContainerTitle>4Used</ContainerTitle>
           <FrontOrBack>Front-end</FrontOrBack>
           <ContainerAbout>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          A 4used é uma startup voltada para compra e venda de produtos usados.
+          Aqui vamos publicar roupas, artigos de decoração, calçados, 
+          eletronicos e móveis. Com um espírito moderno e jovial 
+          conectando empresas e pessoas que querem vender com as 
+          pessoas interessadas em comprar mercadorias de 
+          qualidade com um preço mais em conta..
           </ContainerAbout>
-          <ContainerButton>Ver no GitHub</ContainerButton>
+          <ContainerButton>
+            <ContainerLinkAll href="https://github.com/Leobroud/4Used">
+              Ver no GitHub
+            </ContainerLinkAll>
+          </ContainerButton>
         </Container>
       </ContainerDois>
       <ContainerTres>
         <ContainerIpad src={Ipad}/>
         <Container>
-          <ContainerTitle>Título</ContainerTitle>
+          <ContainerTitle>Labe-commerce</ContainerTitle>
           <FrontOrBack>Front-end</FrontOrBack>
           <ContainerAbout>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -154,8 +162,8 @@ function TelaQuatro() {
       <ContainerQuatro>
         <ContainerImac src={Imac}/>
         <Container>
-          <ContainerTitle>Título</ContainerTitle>
-          <FrontOrBack>Full-Stack</FrontOrBack>
+          <ContainerTitle>Labe-Food</ContainerTitle>
+          <FrontOrBack>Front-end</FrontOrBack>
           <ContainerAbout>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -170,7 +178,11 @@ function TelaQuatro() {
         </Container>
       </ContainerQuatro>
       <ContainerCinco>
-        <ContainerTextEnd>mais projetos</ContainerTextEnd>
+        <ContainerTextEnd>
+         <ContainerLink href="https://github.com/Leobroud" title="Acesse meu GitHub">
+           Mais projetos
+          </ContainerLink>
+        </ContainerTextEnd>
       </ContainerCinco>
     </>
   );
