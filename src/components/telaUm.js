@@ -100,6 +100,7 @@ const ContainerSpace = styled.div`
 const ContainerTextButton = styled.text`
   font-style: Regular;
   letter-spacing: -0.28px;
+  font-size: 15px;
   color: #011726;
 `
 const ContainerLink = styled.div`
@@ -142,17 +143,17 @@ function TelaUm() {
         na parte de Front-end.
         </ContainerText>
         <ContainerTec>
-        <ContainerSpace/>NodeJS
-        <ContainerSpace/>MySQL
+        <ContainerSpace/>JavaScript 
         <ContainerSpace/>HTML
         <ContainerSpace/>CSS
-        <ContainerSpace/>JavaScript 
+        <ContainerSpace/>MySQL
+        <ContainerSpace/>NodeJS
         </ContainerTec>
         <ContainerButton>
         <LinkContainer href={Curriculo}
           download = "Curriculo">
           <ContainerTextButton>
-            CV em PDF
+            Currículo
           </ContainerTextButton>
         </LinkContainer>
         </ContainerButton>

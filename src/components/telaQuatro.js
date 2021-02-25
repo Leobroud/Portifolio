@@ -147,16 +147,19 @@ function TelaQuatro() {
           <ContainerTitle>Labe-commerce</ContainerTitle>
           <FrontOrBack>Front-end</FrontOrBack>
           <ContainerAbout>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          A Labe-commerce é um site focado na venda 
+          de itens espacias tais como:<br/>
+          - Satélites antigos;<br/>
+          - Roupas espaciais;<br/>
+          - Meteoritos / aerolitos como pedras preciosas;<br/>
+          - Brinquedos e produtos infantis temáticos;<br/>
+          - Naves / Foguetes / Ônibus espaciais; <br/>
           </ContainerAbout>
-          <ContainerButton>Ver no GitHub</ContainerButton>
+          <ContainerButton>
+            <ContainerLinkAll href="https://github.com/Leobroud/Labe-commerce">
+              Ver no GitHub
+            </ContainerLinkAll>
+          </ContainerButton>
           </Container>
       </ContainerTres>
       <ContainerQuatro>
@@ -165,16 +168,17 @@ function TelaQuatro() {
           <ContainerTitle>Labe-Food</ContainerTitle>
           <FrontOrBack>Front-end</FrontOrBack>
           <ContainerAbout>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            O projeto LabeFood foi baseado num clone do uber-eats
+            onde tivemos a experiência de trabalhar em grupo.
+            Implementamos as funcionalidades mais comuns em um 
+            desenvolvimento Front-End: formulários, auntenticação,
+            routers, estilizações e testes automatizados.
           </ContainerAbout>
-          <ContainerButton>Ver no GitHub</ContainerButton>
+          <ContainerButton>
+            <ContainerLinkAll href="https://github.com/Leobroud/Labe-Food">
+              Ver no GitHub
+            </ContainerLinkAll>
+          </ContainerButton>
         </Container>
       </ContainerQuatro>
       <ContainerCinco>
